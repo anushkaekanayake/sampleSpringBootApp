@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface SampleService {
     List<Course> executeSample();
+
+    int calculateSum(int... number);
 }

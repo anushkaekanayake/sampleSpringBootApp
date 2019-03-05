@@ -15,6 +15,15 @@ public class SampleServiceImpl implements SampleService {
 
     @Override
     public List<Course> executeSample() {
-       return courseRepository.findAll();
+        return courseRepository.findAll();
+    }
+
+    @Override
+    public int calculateSum(int... numbers) {
+        int total = 0;
+        for (int number : numbers) {
+            total += number;
+        }
+        return total;
     }
 }
